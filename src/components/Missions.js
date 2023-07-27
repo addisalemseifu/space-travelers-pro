@@ -4,7 +4,7 @@ import Mission from './Mission';
 
 export default function Missions() {
   const { missions } = useSelector((store) => store.mission);
-  console.log(missions);
+  console.log(missions.length);
   return (
     <div className="mission-container">
       <table>

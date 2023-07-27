@@ -10,7 +10,7 @@ export default function Navigation() {
       <li className="links">
         <NavLink
           to="/"
-          ClassName="link"
+          className="link"
         >
           <span className="my-link">Rockets</span>
         </NavLink>

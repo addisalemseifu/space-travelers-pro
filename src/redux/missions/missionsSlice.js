@@ -1,9 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const dataUrl = 'https://api.spacexdata.com/v4/rockets';
 
-export const getMissions = createAsyncThunk('mission/getMissions', () => fetch(dataUrl)
-  .then((res) => res.json())
+export const getMissions = createAsyncThunk('mission/getMissions', () => axios.get(dataUrl)
+  .then((res) => res.data)
   .catch((err) => console.log(err)));
 
 const initialState = {
@@ -16,7 +17,6 @@ const missionSlice = createSlice({
   initialState,
   reducers: {
     reserveMission: (state, action) => {
-      console.log(action.payload);
       let index = null;
       for (let i = 0; i < state.missions.length; i += 1) {
         if (state.missions[i].id === action.payload) {
@@ -53,6 +53,7 @@ const missionSlice = createSlice({
       state.isLoading = true;
     },
     [getMissions.fulfilled]: (state, action) => {
+      console.log('dddd');
       state.isLoading = false;
       state.missions = action.payload;
     },

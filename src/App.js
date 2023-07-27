@@ -1,10 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { getRockets } from './redux/rockets/rocketsSlice';
 import Missions from './components/Missions';
 import Navigation from './components/Navigation';
 import MyProfile from './components/MyProfile';
 import Rockets from './components/Rockets/Rockets';
+import { getMissions } from './redux/missions/missionsSlice';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getRockets());
+    dispatch(getMissions());
+  }, []);
   return (
     <div className="App">
       <Navigation />
