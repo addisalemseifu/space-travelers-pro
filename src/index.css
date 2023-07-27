@@ -308,3 +308,68 @@ Missions
   border: 1px solid red;
   color: red;
 }
+
+/*
+===============
+Rockets
+===============
+*/
+
+.rockets {
+  background-color: var(--clr-white);
+}
+
+.rocket-container {
+  display: flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.rocket-container img {
+  width: 10rem;
+}
+
+.falc-conatainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.falc-conatainer button {
+  margin-right: auto;
+  padding: 0.3rem;
+  background-color: #3d9ae1;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+
+.reserved-falc-conatainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.reserved-falc-conatainer button {
+  margin-right: auto;
+  padding: 0.3rem;
+  background-color: transparent;
+  border: 1px solid var(--clr-grey-5);
+  border-radius: 2px;
+  color: var(--clr-grey-5);
+}
+
+.reserved-falc-conatainer p h5 {
+  display: inline;
+  background-color: rgb(74, 171, 174);
+  color: white;
+  border-radius: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-right: 7px;
+}
