@@ -397,13 +397,6 @@ My profile
   width: 100%;
 }
 
-td,
-th {
-  border: 1px solid #dee2e6;
-  text-align: left;
-  padding: 8px;
-}
-
 .profile_table td {
   border: solid 0.2px #f5dede;
   border-spacing: 0;
