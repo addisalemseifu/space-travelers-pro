@@ -373,3 +373,49 @@ Rockets
   padding-right: 2px;
   margin-right: 7px;
 }
+
+/*
+===============
+My profile
+===============
+*/
+
+.pro-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.profile-header {
+  width: 100%;
+}
+
+.profile_table {
+  border: solid 0.2px #f5dede;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.profile_table td {
+  border: solid 0.2px #f5dede;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.body {
+  border: solid 0.2px #f8f2f2;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.body p {
+  padding: 0.5rem;
+}
+
+.text {
+  color: #121212;
+  padding: 0.8rem;
+  width: 100%;
+}
