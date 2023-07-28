@@ -20,7 +20,7 @@ export default function Navigation() {
         {' '}
       </NavLink>
       <span className="ver-line" />
-      <NavLink to="/myprofile"><span className="my-link">MY Profile</span></NavLink>
+      <NavLink to="/myprofile"><span className="my-link">My Profile</span></NavLink>
 
     </nav>
   );

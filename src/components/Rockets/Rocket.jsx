@@ -8,11 +8,9 @@ export default function Rocket({
 }) {
   const dispatch = useDispatch();
   function reserveHandler(id) {
-    console.log('reserve');
     dispatch(reserve(id));
   }
   function cancelReserveHandler(id) {
-    console.log('reserve');
     dispatch(cancelReserve(id));
   }
   return (

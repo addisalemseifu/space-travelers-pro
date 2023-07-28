@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions page renders correctly 1`] = `
+<tr
+  className="comp-row"
+>
+  <th
+    className="name"
+  />
+  <th>
+    <p
+      className="para"
+    />
+  </th>
+  <th>
+    <button
+      className="member-btn"
+      type="button"
+    >
+      NOT A MEMBER
+    </button>
+  </th>
+  <th>
+    <button
+      className="join-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </th>
+</tr>
+`;
