@@ -1,10 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const dataUrl = 'https://api.spacexdata.com/v4/rockets';
-export const getRockets = createAsyncThunk('rocket/getRockets', () => axios.get(dataUrl)
-  .then((res) => res.data)
-  .catch((err) => console.log(err)));
+export const getRockets = createAsyncThunk('rocket/getRockets', () => fetch(dataUrl)
+  .then((res) => res.json())
+  .catch((err) => (err)));
 
 const initialState = {
   rockets: [],
@@ -15,14 +14,12 @@ const rocketSlice = createSlice({
   initialState,
   reducers: {
     reserve: (state, action) => {
-      console.log(action.payload);
       let index = null;
       for (let i = 0; i < state.rockets.length; i += 1) {
         if (state.rockets[i].id === action.payload) {
           index = i;
         }
       }
-      console.log(index);
       for (let i = 0; i < state.rockets.length; i += 1) {
         if (i === index) {
           const newState = state;
@@ -31,14 +28,12 @@ const rocketSlice = createSlice({
       }
     },
     cancelReserve: (state, action) => {
-      console.log(action.payload);
       let index = null;
       for (let i = 0; i < state.rockets.length; i += 1) {
         if (state.rockets[i].id === action.payload) {
           index = i;
         }
       }
-      console.log(index);
       for (let i = 0; i < state.rockets.length; i += 1) {
         if (i === index) {
           const newState = state;
