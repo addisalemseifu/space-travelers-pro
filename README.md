@@ -70,7 +70,7 @@ In summary, Space-Traveler is a platform that caters to space enthusiasts, provi
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](Coming Soon)
+- [Live Demo Link](https://space-traverlers.onrender.com/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -136,6 +136,14 @@ You can deploy this project using: GitHub Pages
 - [GitHub](https://github.com/AnsarIbrahim)
 - [LinkedIn](www.linkedin.com/in/ansar-ibrahim)
 - [Twitter](https://twitter.com/ansaradheeb)
+
+
+👤 **Addisalem Seifu Beidework**
+
+- GitHub: [@addisalemseifu](https://github.com/githubhandle)
+- Twitter: [@Addisalem Seifu](https://twitter.com/addisalems92518)
+- LinkedIn: [addisalem seifu](https://www.linkedin.com/in/addisalemseifu/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
